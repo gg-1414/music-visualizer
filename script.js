@@ -111,19 +111,15 @@ window.onload = function() {
           r = 0
           g = 219
           b = 131
-        } else if (dataArray[i] < 150){ // light blue
+        } else { // light blue
           r = 0
           g = 199
           b = 255
-        } else if (dataArray[i] < 140){ // blue
-          r = 0
-          g = 12
-          b = 255
         }
 
-        if (i === 0){
-          console.log(dataArray[i])
-        }
+        // if (i === 0){
+        //   console.log(dataArray[i])
+        // }
 
         ctx.fillStyle = `rgb(${r},${g},${b})`;
         ctx.fillRect(x, (HEIGHT - barHeight), barWidth, barHeight);

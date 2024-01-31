@@ -90,7 +90,8 @@ window.onload = function() {
       ctx.fillRect(0, 0, WIDTH, HEIGHT); // Fade effect, set opacity to 1 for sharper rendering of bars
 
       let r, g, b;
-      let bars = 118 // Set total number of bars you want per frame
+      //let bars = 118 // Set total number of bars you want per frame
+      let bars = dataArray.length
 
       for (let i = 0; i < bars; i++) {
         barHeight = (dataArray[i] * 2.5);
